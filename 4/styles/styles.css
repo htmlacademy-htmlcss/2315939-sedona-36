@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-display: swap;
+}
+
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    background: rgba(131, 179, 211, 0.12);
+}
+
+button {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #756157;;
+}
+
+
+.page-header {
+    color: #000000;
+    background: #ffffff;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.main-index {
+    color: #000000;
+    background: rgba(131, 179, 211, 0.12);
+    background-image: url(../images/background_index.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.advantages {
+
+}
+
+.advantages-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-subtitle {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26x;
+    font-weight: 400;
+    text-transform: none;
+    color: #333333;
+}
+
+.advantages-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.subscription {
+    color: #000000;
+    background: #ffffff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.subscription-main {
+    background-image: url(../images/background_subscribe.jpg);
+}
+
+.item-light {
+    color: #ffffff;
+}
+
+
+
+.page-footer {
+    color: #000000;
+    background: #ffffff;
+}
+
+.footer-phone-number {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.inner-header-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.hotel-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.control-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.hotel-options {
+    color: #ffffff;
+    background: #82B3D3;
+    background-image: url(../images/background_catalog.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.filter-button-apply, .button-card-favourite, .subscription-button {
+    width: 191px;
+    height: 36px;
+    background: #82B3D3;
+    border-radius: 4px;
+}
+
+.filter-button-reset {
+    width: 76px;
+    height: 20px;
+    font-weight: 700;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.hotel-result-header-title, .hotel-result-header-number {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.hotel-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    font-style: normal;
+}
+
+.button-card-favourite {
+    width: 140px;
+    height: 36px;
+}
+
+.button-card-in-favourites {
+    width: 140px;
+    height: 36px;
+    background: #7DB54F;;
+    border-radius: 4px;
+}
+
+.card-rating-text, .card-rating-number {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pagination-current {
+    color: #000000;
+}
