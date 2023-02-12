@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -18,7 +19,7 @@
             <a class="navigation-link" href="about.html">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current" href="#">Гостиницы</a>
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -37,7 +38,7 @@
               </a>
           </li>
           <li class="navigation-item">
-            <a class="button" href="#">Хочу сюда!</a>
+            <button class="button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -139,8 +140,8 @@
                           </button>
                         </div>
                     </fieldset>
-                    <button class="filter-button-apply" type="submit">Применить</button>
-                    <button class="filter-button-reset" type="reset">Сбросить</button>
+                    <button class="button filter-button-apply" type="submit">Применить</button>
+                    <button class="button filter-button-reset" type="reset">Сбросить</button>
                 </form>
             </section>
             <section class="hotel-result">
@@ -155,13 +156,13 @@
                         <option value="expensive">Сначала дорогие</option>
                         <option value="popular">Сначала популярные</option>
                     </select>
-                    <a href="#" class="button">
+                    <a href="#" class="button-view">
                         <span class="visually-hidden">Показать карточки</span>
                     </a>
-                    <a href="#" class="button-light">
+                    <a href="#" class="button-view">
                         <span class="visually-hidden">Показать карточку</span>
                     </a>
-                    <a href="#" class="button-light">
+                    <a href="#" class="button-view">
                         <span class="visually-hidden">Показать список</span>
                     </a>
                 </header>
@@ -176,8 +177,8 @@
                             <span class="hotel-price-text">От</span>
                             <span class="hotel-price-number">4000 ₽</span>
                         </p>
-                        <button class="button-card-detail" type="button">подробнее</button>
-                        <button class="button-card-favourite" type="button">в избранное</button>
+                        <button class="button button-card-detail" type="button">подробнее</button>
+                        <button class="button button-card-favourite" type="button">в избранное</button>
                         <img class="rating-stars" src="images/icons/stars_4.svg" width="140" height="37" alt="оценка четыре звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
@@ -194,8 +195,8 @@
                             <span class="hotel-price-text">От</span>
                             <span class="hotel-price-number">5000 ₽</span>
                         </p>
-                        <button class="button-card-detail" type="button">подробнее</button>
-                        <button class="button-card-favourite" type="button">в избранное</button>
+                        <button class="button button-card-detail" type="button">подробнее</button>
+                        <button class="button button-card-in-favourites" type="button">в избранном</button>
                         <img class="rating-stars" src="images/icons/stars_4.svg" width="140" height="37" alt="оценка четыре звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
@@ -212,8 +213,8 @@
                             <span class="hotel-price-text">От</span>
                             <span class="hotel-price-number">2500 ₽</span>
                         </p>
-                        <button class="button-card-detail" type="button">подробнее</button>
-                        <button class="button-card-favourite" type="button">в избранное</button>
+                        <button class="button button-card-detail" type="button">подробнее</button>
+                        <button class="button button-card-favourite" type="button">в избранное</button>
                         <img class="rating-stars" src="images/icons/stars_3.svg" width="140" height="37" alt="оценка три звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
@@ -230,8 +231,8 @@
                             <span class="hotel-price-text">От</span>
                             <span class="hotel-price-number">1500 ₽</span>
                         </p>
-                        <button class="button-card-detail" type="button">подробнее</button>
-                        <button class="button-card-favourite" type="button">в избранное</button>
+                        <button class="button button-card-detail" type="button">подробнее</button>
+                        <button class="button button-card-favourite" type="button">в избранное</button>
                         <img class="rating-stars" src="images/icons/stars_2.svg" width="140" height="37" alt="оценка две звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
@@ -278,7 +279,7 @@
             </p>
             <form action="#" method="post">
               <input class="field" type="email" placeholder="Ваш e-mail" required>
-              <button class="subscription-button" type="submit">Подписаться</button>
+              <button class="button subscription-button" type="submit">Подписаться</button>
             </form>
         </section>
     </main>
