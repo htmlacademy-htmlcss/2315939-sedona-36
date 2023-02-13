@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -13,10 +14,10 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О седоне</a>
+            <a class="navigation-link" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Гостиницы</a>
@@ -44,7 +45,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-inner-container">
       <header>
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -179,11 +181,13 @@
                         </p>
                         <button class="button button-card-detail" type="button">подробнее</button>
                         <button class="button button-card-favourite" type="button">в избранное</button>
+                        <div class="rating-stars-div">
                         <img class="rating-stars" src="images/icons/stars_4.svg" width="140" height="37" alt="оценка четыре звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
                             <span class="card-rating-number">8,5</span>
                         </p>
+                        </div>
                     </li>
                     <li class="card-item">
                         <a class="hotel-card-link" href="">
@@ -197,11 +201,13 @@
                         </p>
                         <button class="button button-card-detail" type="button">подробнее</button>
                         <button class="button button-card-in-favourites" type="button">в избранном</button>
+                        <div class="rating-stars-div">
                         <img class="rating-stars" src="images/icons/stars_4.svg" width="140" height="37" alt="оценка четыре звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
                             <span class="card-rating-number">9,2</span>
                         </p>
+                        </div>
                     </li>
                     <li class="card-item">
                         <a class="hotel-card-link" href="">
@@ -215,11 +221,13 @@
                         </p>
                         <button class="button button-card-detail" type="button">подробнее</button>
                         <button class="button button-card-favourite" type="button">в избранное</button>
+                        <div class="rating-stars-div">
                         <img class="rating-stars" src="images/icons/stars_3.svg" width="140" height="37" alt="оценка три звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
                             <span class="card-rating-number">6,9</span>
                         </p>
+                        </div>
                     </li>
                     <li class="card-item">
                         <a class="hotel-card-link" href="">
@@ -233,21 +241,18 @@
                         </p>
                         <button class="button button-card-detail" type="button">подробнее</button>
                         <button class="button button-card-favourite" type="button">в избранное</button>
+                        <div class="rating-stars-div">
                         <img class="rating-stars" src="images/icons/stars_2.svg" width="140" height="37" alt="оценка две звезды">
                         <p class="card-rating-block">
                             <span class="card-rating-text">Рейтинг:</span>
                             <span class="card-rating-number">5,0</span>
                         </p>
+                        </div>
                     </li>
                 </ul>
                 <ul class="pagination">
                     <li class="pagination-item">
-                        <a class="pagination-link pagination-prev pagination-disabled">
-                            <span class="visually-hidden">Предыдущая страница</span>
-                        </a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-current">1</a>
+                        <a class="pagination-link pagination-light">1</a>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#">2</a>
@@ -259,7 +264,7 @@
                         <a class="pagination-link" href="#">4</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link pagination-link--hidden" href="#">
+                        <a class="pagination-link pagination-light" href="#">
                             ...
                             <span class="visually-hidden">Промежуточные страницы</span>
                         </a>
@@ -269,22 +274,24 @@
                     </li>
                 </ul>
             </section>
+      </div>
 
         <section class="subscription">
-            <h2 class="subscription-title">
+            <h2 class="advantages-title">
               Подпишитесь на рассылку
             </h2>
-            <p class="subscription-subtitle">
+            <p class="advantages-subtitle subtitle-subscription">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <form action="#" method="post">
-              <input class="field" type="email" placeholder="Ваш e-mail" required>
+              <input class="input" type="email" placeholder="Ваш e-mail" required>
               <button class="button subscription-button" type="submit">Подписаться</button>
             </form>
         </section>
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
         <section class="footer-social">
           <h2 class="visually-hidden">Соцсети</h2>
           <ul class="footer-social-list">
@@ -316,8 +323,8 @@
           <h2 class="visually-hidden">HTML-academy</h2>
           <img class="footer-academy-logo" src="images/icons/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML-academy">
         </section>
-
-      </footer>
-
-    </body>
-  </html>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>
