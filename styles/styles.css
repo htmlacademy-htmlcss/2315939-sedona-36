@@ -399,10 +399,13 @@ img {
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+
 }
 
 .hotel-result-header{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hotel-card {
@@ -417,6 +420,11 @@ img {
     color: #FFFFFF;
 }
 
+.input-form {
+    display: flex;
+    justify-content: center;
+}
+
 .hotel-filter-item {
     list-style-type: none;
 }
@@ -427,6 +435,7 @@ img {
     background-image: url("../images/background_catalog.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    min-height: 160px;
 }
 
 .filter-button-apply, .button-card-favourite {
@@ -447,6 +456,10 @@ img {
     font-weight: 700;
 }
 
+.filter-input {
+    width: 143px;
+    min-height: 48px;
+}
 
 .filter-button-reset {
     width: 76px;
@@ -462,6 +475,18 @@ img {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.hotel-result-sorting {
+    margin-left: 200px;
+    min-width: 292px;
+    min-height: 49px;
+}
+
+.button-view {
+    min-height: 48px;
+    min-width: 48px;
+    gap: 8px;
 }
 
 .card-item {
