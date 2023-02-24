@@ -428,6 +428,18 @@ img {
     justify-content: space-between;
 }
 
+.button-view-container {
+    display: flex;
+    gap: 8px;
+}
+
+.button-view {
+    display: block;
+    min-width: 48px;
+    min-height: 48px;
+    border: 2px solid #E5E5E5;
+}
+
 .hotel-card {
     display: flex;
     flex-wrap: wrap;
