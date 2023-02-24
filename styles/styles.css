@@ -422,15 +422,18 @@ img {
 }
 
 .hotel-result-header{
+    min-width: 1200px;
     padding-top: 50px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 .button-view-container {
     display: flex;
     gap: 8px;
+    margin-left: 70px;
 }
 
 .button-view {
@@ -441,11 +444,11 @@ img {
 }
 
 .hotel-card {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3,340px);
+    gap: 20px;
 }
 
 .control-input {
@@ -547,12 +550,17 @@ img {
 }
 
 .card-item {
-    width: 340px;
-    min-height: 438px;
-    margin-bottom: 20px;
     list-style-type: none;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    gap: 16px 20px;
+    padding: 20px;
+}
+
+.hotel-card-link {
+    grid-column: 1/-1;
 }
 
 .hotel-card-title {
@@ -560,6 +568,17 @@ img {
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.hotel-card-info {
+    justify-self: start;
+}
+
+.hotel-card-price {
+    margin: 0;
+    justify-self: end;
 }
 
 .button-card-detail {
@@ -582,18 +601,24 @@ img {
 .rating-stars {
     width: 140px;
     height: 37px;
+    justify-self: start;
 }
 
-.rating-stars-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.card-rating-block {
+    justify-self: end;
+    box-sizing: border-box;
+    margin: 0;
+    background: #F2F2F2;
+    border-radius: 4px;
+    min-width: 140px;
+    min-height: 37px;
 }
 
 .card-rating-text, .card-rating-number {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
     text-transform: uppercase;
 }
 
