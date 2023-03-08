@@ -527,7 +527,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 1060px;
-    margin: 40px auto 0;
+    margin: 45px auto 0;
 }
 
 .footer-phone-number {
@@ -768,7 +768,7 @@ input:checked + .input-checkbox::before {
 }
 
 input:focus + .input-checkbox::before{
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .input-radio::before {
@@ -797,7 +797,7 @@ input:checked + .input-radio::after {
 }
 
 input:focus + .input-radio::before{
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
 
 .control-input:checked .input-checkbox::before {
@@ -901,13 +901,19 @@ input:focus + .input-radio::before{
 
 .filter-input:focus {
     background: #E6E6E6;
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 4px 0 0 4px;
 }
 
 .filter-input:active {
     background: #F2F2F2;
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
+}
+
+.filter-input::-webkit-outer-spin-button,
+.filter-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
 }
 
 .min-price {
@@ -936,7 +942,6 @@ input:focus + .input-radio::before{
 }
 
 .selected-range {
-    width: 75%;
     height: 4px;
     background-color: #ffffff;
     border-radius: 4px;
@@ -949,6 +954,7 @@ input:focus + .input-radio::before{
     height: 20px;
     border-radius: 5px;
     border: none;
+    background-color: #ffffff;
 }
 
 .button-max-price {
@@ -959,6 +965,21 @@ input:focus + .input-radio::before{
     border-radius: 5px;
     border: none;
     right: 60px;
+    background-color: #ffffff;
+}
+
+.button-min-price:hover, .button-max-price:hover {
+    background-color: #ffffff;
+}
+
+.button-min-price:focus, .button-max-price:focus {
+    background-color: #ffffff;
+    outline: 3px solid #83B3D3;;
+}
+
+.button-min-price:active, .button-max-price:active {
+    background-color: #ffffff;
+    outline: 2px solid #83B3D3;;
 }
 
 .filter-button-reset {
@@ -1142,7 +1163,7 @@ input:focus + .input-radio::before{
 .pagination {
     display: flex;
     margin: 0;
-    padding: 80px 0 60px;
+    padding: 77px 0 60px;
     gap: 0 8px;
 }
 
