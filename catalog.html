@@ -69,21 +69,21 @@
                         <legend class="hotel-filter-title">Инфраструктура:</legend>
                         <ul class="hotel-filter-list">
                             <li class="hotel-filter-item">
-                                <label class="control input-checkbox">
-                                    <input class="control-input" type="checkbox" name="pool" checked>
-                                    Бассейн
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="pool" checked>
+                                      <span class="control input-checkbox">Бассейн</span>
                                 </label>
                             </li>
                             <li class="hotel-filter-item">
-                                <label class="control input-checkbox">
-                                    <input class="control-input" type="checkbox" name="parking" checked>
-                                    Парковка
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="parking" checked>
+                                    <span class="control input-checkbox">Парковка</span>
                                 </label>
                             </li>
                             <li class="hotel-filter-item">
-                                <label class="control input-checkbox">
-                                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                                    Wi-Fi
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="Wi-Fi">
+                                      <span class="control input-checkbox">Wi-Fi</span>
                                 </label>
                             </li>
                         </ul>
@@ -92,21 +92,21 @@
                         <legend class="hotel-filter-title">Тип жилья:</legend>
                             <ul class="hotel-filter-list">
                                 <li class="hotel-filter-item">
-                                    <label class="control input-radio">
-                                        <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
-                                        Гостиница
+                                    <label>
+                                        <input class="visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
+                                        <span class="control input-radio">Гостиница</span>
                                     </label>
                                 </li>
                                 <li class="hotel-filter-item">
-                                    <label class="control input-radio">
-                                        <input class="control-input" type="radio" name="hotel-type" value="motel">
-                                        Мотель
+                                    <label>
+                                        <input class="visually-hidden" type="radio" name="hotel-type" value="motel">
+                                          <span class="control input-radio">Мотель</span>
                                     </label>
                                 </li>
                                 <li class="hotel-filter-item">
-                                    <label class="control input-radio">
-                                        <input class="control-input" type="radio" name="hotel-type" value="apartaments">
-                                        Апартаменты
+                                    <label>
+                                        <input class="visually-hidden" type="radio" name="hotel-type" value="apartaments">
+                                          <span class="control input-radio">Апартаменты</span>
                                     </label>
                                 </li>
                             </ul>
@@ -114,6 +114,7 @@
                     </fieldset>
                     <fieldset class="hotel-filter-group">
                         <legend class="hotel-filter-title">Стоимость, ₽:</legend>
+                        <div class="filter-label-wrapper">
                         <label class="filter-label" for="min-price">
                             <input class="filter-input min-price" name="min-price" value="0" type="number">
                             <span class="filter-text">
@@ -126,7 +127,7 @@
                               до
                             </span>
                         </label>
-
+                        </div>
                         <div class="filter-scale">
                           <div class="selected-range"></div>
                           <button class="button-min-price" type="button">
