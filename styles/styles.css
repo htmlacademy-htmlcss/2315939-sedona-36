@@ -1343,13 +1343,17 @@ input:focus + .input-radio::before{
 }
 
 .search-message {
-    display: block;
+    display: none;
     margin: 4px 0 0 20px;
     font-size: 16px;
 }
 
 .search-message-error {
     color: #FF5757;
+}
+
+.search-message-display {
+    display: block;
 }
 
 .count-toggle-group {
@@ -1415,6 +1419,7 @@ input:focus + .input-radio::before{
     background-image: url("../images/icons/icon_info.svg");
     background-repeat: no-repeat;
     background-position: center;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -1422,39 +1427,36 @@ input:focus + .input-radio::before{
 .search-tooltip {
     position: absolute;
     top: 40px;
-    right: -111px;
+    right: -114px;
 
     display: none;
     min-width: 256px;
     padding: 20px 18px 24px 21px;
     box-sizing: border-box;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-transform: none;
     text-align: start;
     color: #FFFFFF;
-
     background-color: #333333;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
-.search-label:hover .search-tooltip {
+.search-label:hover .search-tooltip,
+.search-label:focus-within .search-tooltip {
     display: block;
 }
 
 .search-tooltip::before {
     content: "";
     position: absolute;
-    top: -7px;
+    top: -6px;
     left: 50%;
     transform: translate(-50%, 0) rotate(45deg);
-
     width: 13px;
     height: 13px;
-
     background-color: #333333;
 }
 
