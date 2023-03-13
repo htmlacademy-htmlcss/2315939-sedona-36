@@ -266,7 +266,7 @@
             </div>
             <div class="search-group-small">
               <label class="search-label" for="children">Дети:
-                <button class="search-tooltip-toggle-button" type="button" aria-label="Всплывающая подсказка"></button>
+                <button class="search-tooltip-toggle-button" id="children" type="button" aria-label="Всплывающая подсказка"></button>
                 <span class="search-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </label>
               <div class="count-toggle-group">
@@ -278,7 +278,7 @@
                 </svg>
                 </span>
               </button>
-              <input class="search-input input-mini" id="children" name="children" min="0" max="9" value="2" type="number">
+              <input class="search-input input-mini" name="children" min="0" max="9" value="2" type="number">
               <button class="count-toggle count-toggle-increase" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
                 <span class="visually-hidden">Увеличить количество детей</span>
                 <span class="count-toggle-icon">
