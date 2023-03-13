@@ -912,6 +912,10 @@ input:focus + .input-radio::before{
     margin: 0;
 }
 
+.filter-input, .search-input {
+    -moz-appearance: textfield;
+}
+
 .min-price {
     border-radius: 4px 0 0 4px;
 }
