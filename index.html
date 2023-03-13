@@ -211,5 +211,88 @@
     </div>
     </footer>
     </div>
+    <div class="modal-container modal-close">
+      <div class="modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" aria-label="Закрыть модальное окно" role="img">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="search-group">
+              <label class="search-label" for="arrival-date">Дата заезда:</label>
+              <div class="search-input-wrapper">
+                <input class="search-input" placeholder="Укажите дату" id="arrival-date" name="arrival-date" type="text" required>
+                <!-- Для проверки валидного и невалидного состояний нужно добавить класс search-message-display необходимому span -->
+                <span class="search-message">На эти даты есть свободные номера. Пока есть.</span>
+                <span class="search-message search-message-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+          <div class="search-group">
+            <label class="search-label" for="departure-date">Дата выезда:</label>
+            <div class="search-input-wrapper">
+              <input class="search-input" placeholder="Укажите дату" id="departure-date" name="departure-date" type="text" required>
+              <!-- Для проверки валидного и невалидного состояний нужно добавить класс search-message-display необходимому span -->
+              <span class="search-message">На эти даты есть свободные номера. Пока есть.</span>
+              <span class="search-message search-message-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </div>
+          <div class="search-group">
+            <div class="search-group-small">
+              <label class="search-label" for="adults">Взрослые:</label>
+              <div class="count-toggle-group">
+              <button class="count-toggle count-toggle-decrease" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+                <span class="count-toggle-icon">
+                <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" aria-label="Уменьшить количество" role="img">
+                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                </svg>
+                </span>
+              </button>
+              <input class="search-input input-mini" id="adults" name="adults" min="1" max="9" value="2" type="number">
+              <button class="count-toggle count-toggle-increase" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+                <span class="visually-hidden">Увеличить количество взрослых</span>
+                <span class="count-toggle-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" aria-label="Увеличить количество" role="img">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                </svg>
+                </span>
+              </button>
+              </div>
+            </div>
+            <div class="search-group-small">
+              <label class="search-label" for="children">Дети:
+                <button class="search-tooltip-toggle-button" type="button" aria-label="Всплывающая подсказка"></button>
+                <span class="search-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </label>
+              <div class="count-toggle-group">
+              <button class="count-toggle count-toggle-decrease" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+                <span class="visually-hidden">Уменьшить количество детей</span>
+                <span class="count-toggle-icon">
+                <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg"  aria-label="Уменьшить количество" role="img">
+                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                </svg>
+                </span>
+              </button>
+              <input class="search-input input-mini" id="children" name="children" min="0" max="9" value="2" type="number">
+              <button class="count-toggle count-toggle-increase" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+                <span class="visually-hidden">Увеличить количество детей</span>
+                <span class="count-toggle-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" aria-label="Увеличить количество" role="img">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                </svg>
+                </span>
+              </button>
+              </div>
+            </div>
+          </div>
+          <button class="button search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
