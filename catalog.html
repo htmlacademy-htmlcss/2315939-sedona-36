@@ -155,8 +155,10 @@
                     Результат поиска гостиниц.
                 </h2>
                 <header class="hotel-result-header">
+                    <div class="result-header">
                     <p class="hotel-result-header-title">Найдено гостиниц:&nbsp;</p>
                     <span class="hotel-result-header-number">38</span>
+                    </div>
                     <select class="hotel-result-sorting" aria-label="Сортировка.">
                         <option value="cheap">Сначала дешевые</option>
                         <option value="expensive">Сначала дорогие</option>
@@ -283,8 +285,8 @@
             </p>
             <form class="input-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="subscription-inner-email">Ваш e-mail.</label>
-              <input class="input" type="email" id="subscription-inner-email" placeholder="Ваш e-mail" required>
-              <button class="button subscription-button" type="submit">Подписаться</button>
+              <input class="input" type="email" id="subscription-inner-email" placeholder="Ваш e-mail" name="user-email" required>
+              <button class="button subscription-button" type="submit" value="submit">Подписаться</button>
             </form>
         </section>
     </main>
