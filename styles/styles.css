@@ -1454,7 +1454,6 @@ input:focus + .input-radio::before{
     position: absolute;
     top: 40px;
     right: -114px;
-
     display: none;
     min-width: 256px;
     padding: 20px 18px 24px 21px;
@@ -1470,10 +1469,8 @@ input:focus + .input-radio::before{
     border-radius: 10px;
 }
 
-.search-label:hover .search-tooltip,
-.search-label:focus-within .search-tooltip {
+.search-label:hover .search-tooltip {
     display: block;
-    outline: 0;
 }
 
 .search-tooltip::before {
