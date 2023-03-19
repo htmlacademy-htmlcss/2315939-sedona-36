@@ -420,6 +420,7 @@ body {
 }
 
 .advantages-img {
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 }
