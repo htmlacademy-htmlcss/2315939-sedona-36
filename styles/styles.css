@@ -260,8 +260,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 1280px;
-    padding: 0 40px;
+    width: 1200px;
+    padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -392,7 +392,7 @@ body {
     height: 0;
     width: 60px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    top: 85px;
+    bottom: -32px;
     right: 85px;
 }
 
@@ -403,19 +403,19 @@ body {
     min-height: 385px;
 }
 
-.advantages-item:first-child, .advantages-item:last-child {
+.dark-blue {
     background-color: #82B3D3;
 }
 
-.advantages-item:first-child .advantages-header::after, .advantages-item:last-child .advantages-header::after {
+.dark-blue .advantages-header::after {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.advantages-item:nth-child(2n) {
+.light-blue {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(3) {
+.blue {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -446,23 +446,23 @@ body {
     padding: 80px;
 }
 
-.accomodation-item:first-child, .accomodation-item:last-child {
+.accomodation-item:nth-child(2n-1) {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.accomodation-item:first-child {
+.item-house {
     background-image: url(../images/icons/icon_house_blue.svg);
     background-repeat: no-repeat;
     background-position: center 81px;
 }
 
-.accomodation-item:nth-child(2) {
+.item-food {
     background-image: url(../images/icons/icon_food_blue.svg);
     background-repeat: no-repeat;
     background-position: center 81px;
 }
 
-.accomodation-item:last-child {
+.item-present {
     background-image: url(../images/icons/icon_present_blue.svg);
     background-repeat: no-repeat;
     background-position: center 81px;
@@ -1040,6 +1040,7 @@ input:focus + .input-radio::before{
     background-image: url("../images/icons/icon_arrow_down.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
+    background-color: #ffffff;
     padding-right: 40px;
     align-self: normal;
 }
