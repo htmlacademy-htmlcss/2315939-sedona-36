@@ -1079,6 +1079,7 @@ input:focus + .input-radio::before{
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(4, max-content);
     gap: 16px 20px;
     padding: 20px;
 }
